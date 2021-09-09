@@ -1,0 +1,1089 @@
+$CHERRY: #d41217;
+$CHERRY05: #d412170d;
+$CHERRY20: #d4121733;
+$CHERRY30: #d412174d;
+$ComeOn: #8db524;
+$ComeOn20: #8db52433;
+$Restaurangcasino: #8961a6;
+$Restaurangcasino20: #8961a633;
+$Yggdrasil: #f39332;
+$Yggdrasil20: #f3933233;
+$Gamelounge: #41bfed;
+$Gamelounge20: #41bfed33;
+$XCaliber: #7b858a;
+$GREYDARK: #c8c8ca;
+$GREYLIGHT: #e7e8e8;
+$GREYLIGHT20: #e7e8e833;
+$Charcoal: #4a4a4a;
+$Charcoal80: #4a4a4acc;
+$DARKGREY: #c8c8ca;
+$White: #ffffff;
+$White90: #ffffffe6;
+$font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+  'Lucida Sans', Arial, sans-serif;
+$padding5-10: 5% 10%;
+$padding5-5: 5% 5%;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-family;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.17em;
+}
+h4 {
+  font-size: 1em;
+}
+h5 {
+  font-size: 0.875em;
+}
+h6 {
+  font-size: 0.75em;
+}
+p {
+  font-size: 1em;
+}
+ul {
+  font-size: 1em;
+}
+ul {
+  font-size: 1em;
+  li {
+    i {
+      font-size: 1.5em;
+      margin-right: 1em;
+      width: 10%;
+    }
+  }
+}
+nav {
+  ul {
+    li {
+      text-transform: uppercase;
+    }
+  }
+}
+body.hide {
+  overflow: hidden;
+}
+i.fas.fa-times {
+  color: $CHERRY;
+  font-size: 1.5em;
+  margin-left: 20px;
+}
+i.fas.fa-minus {
+  display: none;
+}
+.red-line {
+  border-top: 1px solid $CHERRY;
+}
+.logo {
+  img {
+    width: 141px;
+    height: auto;
+  }
+  padding: 1% 5%;
+}
+.cookie {
+  display: flex;
+  justify-content: space-between;
+  background: $CHERRY05;
+  padding: 1% 5%;
+}
+.cookie-text {
+  margin-top: 6px;
+  text-align: center;
+  font-size: 12px;
+}
+.red-btn {
+  background: $CHERRY;
+  padding: 6px 30px;
+  color: $White;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0 5%;
+  text-align: center;
+  li {
+    color: $Charcoal;
+    padding: 1%;
+    cursor: pointer;
+  }
+  .menu {
+    &:hover {
+      color: $CHERRY;
+      background: $CHERRY30;
+      padding: 1% 1% 0;
+    }
+  }
+}
+.banner {
+  position: relative;
+  overflow: auto;
+  li {
+    list-style: none;
+  }
+  ul {
+    li {
+      float: left;
+    }
+  }
+}
+@mixin slider {
+  height: 810px;
+  background-repeat: space;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-1 {
+  background: linear-gradient(to right, $CHERRY20, $CHERRY20),
+    url(../images/slider-1.png);
+  @include slider;
+}
+.slider-2 {
+  background: linear-gradient(to right, $CHERRY20, $CHERRY20),
+    url(../images/block-img2.png);
+  @include slider;
+}
+.slider-3 {
+  background: linear-gradient(to right, $CHERRY20, $CHERRY20),
+    url(../images/block-img3.png);
+  @include slider;
+}
+.slider-4 {
+  background: linear-gradient(to right, $CHERRY20, $CHERRY20),
+    url(../images/block-img4.png);
+  @include slider;
+}
+.slider-5 {
+  background: linear-gradient(to right, $CHERRY20, $CHERRY20),
+    url(../images/block-img5.png);
+  @include slider;
+}
+.slider-text {
+  width: 760px;
+  color: $White;
+  font-weight: bold;
+  font-size: 6.5em;
+  text-align: center;
+}
+.unslider-nav {
+  display: none;
+}
+.unslider-arrow {
+  display: none;
+}
+.slider {
+  margin-top: -119px;
+}
+.menu-dropdown-content {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  padding: 2% 5%;
+  background: $White90;
+  height: 176px;
+  line-height: 2em;
+  ul {
+    li {
+      list-style-type: none;
+      cursor: pointer;
+    }
+  }
+}
+.menu-sub-title {
+  color: $CHERRY;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.secondary-menu {
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+header {
+  background: $White90;
+  position: relative;
+  z-index: 3;
+}
+.menu-price {
+  color: $CHERRY !important;
+}
+#language {
+  background: $CHERRY;
+  color: $White;
+  width: 55px;
+  border-radius: 5px;
+  border: none;
+}
+i.fas.fa-search {
+  color: $CHERRY;
+}
+.search-bar {
+  display: none;
+  justify-content: flex-end;
+  padding-bottom: 1%;
+  position: absolute;
+  width: 100%;
+  background: $White90;
+}
+.search-input {
+  border: 1px solid $CHERRY;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-left: 1%;
+}
+input[type='text'] {
+  width: 150px;
+  -webkit-transition: width 0.35s ease-in-out;
+  transition: width 0.35s ease-in-out;
+  &:focus {
+    width: 40%;
+  }
+}
+input#search[type='text'] {
+  width: 150px;
+  -webkit-transition: width 0.35s ease-in-out;
+  transition: width 0.35s ease-in-out;
+  &:focus {
+    width: 100%;
+  }
+}
+.search-btn {
+  color: $White;
+  background: $CHERRY;
+  border: none;
+  padding: 1% 0;
+  margin-right: 5%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  width: 176px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-box {
+  padding: 2% 6%;
+  display: flex;
+  align-items: center;
+  i {
+    font-size: 1.5em;
+  }
+}
+#search {
+  border: none;
+  background: none;
+  margin-left: 5%;
+  font-size: 1em;
+}
+.header-mobile {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-dots {
+  color: $CHERRY;
+  padding-right: 5%;
+  font-size: 2em;
+  cursor: pointer;
+}
+.mobile-menu-open {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-mobile-options {
+  display: flex;
+  padding-right: 5%;
+}
+.mobile-nav-bar {
+  padding: 0 5%;
+  line-height: 1.5em;
+  .mobile-menu {
+    list-style-type: none;
+    padding: 1%;
+    font-weight: bold;
+    border-top: 1px solid $CHERRY;
+    display: flex;
+    justify-content: space-between;
+    color: $Charcoal;
+    cursor: pointer;
+  }
+}
+.mobile {
+  .red-line {
+    margin: 0 5%;
+  }
+  height: 1000px;
+  display: none;
+}
+.mobile-menu {
+  &:nth-child(13) {
+    border-bottom: 1px solid $CHERRY;
+  }
+  i {
+    font-size: 1.5em;
+    margin-right: 0.5em;
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: end;
+  }
+  p {
+    width: -webkit-fill-available;
+  }
+  &:hover {
+    color: $CHERRY;
+    background: $CHERRY20;
+  }
+}
+.mobile-sub-menu {
+  border-top: 1px solid $CHERRY;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  font-weight: bold;
+  color: $Charcoal;
+  padding: 0.5% 3%;
+  cursor: pointer;
+  text-transform: capitalize;
+  display: none;
+  &:nth-child(14) {
+    border-top: none;
+    border-bottom: 1px solid $CHERRY;
+  }
+  ul {
+    li {
+      &:hover {
+        color: $CHERRY;
+        background: $CHERRY20;
+      }
+      list-style-type: none;
+      text-transform: capitalize;
+    }
+    i {
+      width: 2%;
+    }
+  }
+}
+.sub-menu-title {
+  display: flex;
+  flex-direction: column;
+  background: $White;
+}
+.sub-menu-expand {
+  display: flex;
+  justify-content: space-between;
+}
+.mobile-sub-sub-menu {
+  border: none;
+  display: none;
+  justify-content: space-between;
+  color: $Charcoal;
+  padding: 0.5% 3%;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: normal;
+  &:hover {
+    background: none !important;
+    color: $Charcoal !important;
+  }
+}
+.cards {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  color: $White;
+}
+.card-date {
+  font-size: 0.875em;
+  text-align: center;
+}
+.card-info {
+  font-size: 1.125em;
+  text-align: center;
+}
+.card-info-sm {
+  text-align: center;
+}
+.card-btn {
+  background: $White;
+  border: none;
+  font-weight: bold;
+  padding: 0.4em 0;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 10%;
+  width: 80%;
+  cursor: pointer;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10%;
+  height: 472px;
+  position: relative;
+  ul {
+    li {
+      list-style-type: none;
+      margin: 1rem 0;
+      min-height: 50px;
+    }
+  }
+}
+.card-title {
+  margin: 1em 0;
+}
+.card-1 {
+  background: $Restaurangcasino;
+  button {
+    color: $Restaurangcasino;
+  }
+}
+.card-2 {
+  background: $Yggdrasil;
+  button {
+    color: $Yggdrasil;
+  }
+}
+.card-3 {
+  background: $ComeOn;
+  button {
+    color: $ComeOn;
+  }
+  ul {
+    li {
+      display: flex;
+      align-items: center;
+      min-height: 25px;
+    }
+  }
+}
+.card-4 {
+  background: $CHERRY;
+  ul {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 20%;
+    li {
+      margin: 0;
+    }
+  }
+  button {
+    color: $CHERRY;
+    width: 50%;
+  }
+}
+
+.card-stock-price {
+  font-size: 3.125em;
+  text-align: center;
+}
+.card-stock-percentage {
+  font-size: 3.125em;
+  text-align: center;
+}
+
+h2.card-stock-name {
+  text-align: center;
+}
+.content-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+}
+.content-heading {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: $CHERRY;
+}
+.content-text {
+  max-width: 832px;
+  p {
+    margin: 2rem 0;
+  }
+}
+.block {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.block-text-green {
+  background: $ComeOn20;
+  padding: $padding5-10;
+}
+.block-text-purple {
+  background: $Restaurangcasino20;
+  padding: $padding5-10;
+}
+.block-text-orange {
+  background: $Yggdrasil20;
+  padding: $padding5-10;
+}
+.block-text-blue {
+  background: $Gamelounge20;
+  padding: $padding5-10;
+}
+.block-text-grey {
+  background: $GREYLIGHT20;
+  padding: $padding5-10;
+}
+.block-text-red {
+  background: $CHERRY20;
+  padding: $padding5-10;
+}
+@mixin block-title {
+  margin-bottom: 1em;
+  font-size: 3em;
+}
+.block-title-1 {
+  @include block-title;
+  color: $ComeOn;
+}
+.block-title-2 {
+  @include block-title;
+  color: $Restaurangcasino;
+}
+.block-title-3 {
+  @include block-title;
+  color: $Yggdrasil;
+}
+.block-title-4 {
+  @include block-title;
+  color: $Gamelounge;
+}
+.block-title-5 {
+  @include block-title;
+  color: $Charcoal;
+}
+.block-title-6 {
+  @include block-title;
+  color: $CHERRY;
+}
+@mixin block-info {
+  font-size: 1.125em;
+  line-height: 1.75em;
+  font-weight: bold;
+}
+.block-info-1 {
+  @include block-info;
+}
+.block-info-2 {
+  @include block-info;
+}
+.block-info-3 {
+  @include block-info;
+}
+.block-info-4 {
+  @include block-info;
+}
+.block-info-5 {
+  @include block-info;
+}
+.block-info-6 {
+  @include block-info;
+}
+@mixin block-image {
+  height: 100%;
+  background-repeat: round;
+}
+.block-image-1 {
+  background: url(../images/block-img1.png);
+  @include block-image;
+}
+.block-image-2 {
+  background: url(../images/block-img2.png);
+  @include block-image;
+}
+.block-image-3 {
+  background: url(../images/block-img3.png);
+  @include block-image;
+}
+.block-image-4 {
+  background: url(../images/block-img4.png);
+  @include block-image;
+}
+.block-image-5 {
+  background: url(../images/block-img5.png);
+  @include block-image;
+}
+.block-image-6 {
+  background: url(../images/block-img6.png);
+  @include block-image;
+}
+.share {
+  height: 212px;
+  position: relative;
+}
+.share-text-page {
+  color: $CHERRY;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 6%;
+}
+.social {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  i {
+    color: $White;
+    font-size: 2.25em;
+    cursor: pointer;
+  }
+}
+@mixin social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 76px;
+}
+.social-1 {
+  background: $ComeOn;
+  @include social;
+}
+.social-2 {
+  background: $Restaurangcasino;
+  @include social;
+}
+.social-3 {
+  background: $Yggdrasil;
+  @include social;
+}
+.social-4 {
+  background: $Gamelounge;
+  @include social;
+}
+.social-5 {
+  background: $Charcoal;
+  @include social;
+}
+@mixin social-hover {
+  filter: brightness(0.8);
+}
+.footer-bottom-links a:hover {
+  @include social-hover;
+}
+.card-btn:hover {
+  @include social-hover;
+}
+.red-btn:hover {
+  @include social-hover;
+}
+.social-1:hover {
+  @include social-hover;
+}
+.social-2:hover {
+  @include social-hover;
+}
+.social-3:hover {
+  @include social-hover;
+}
+.social-4:hover {
+  @include social-hover;
+}
+.social-5:hover {
+  @include social-hover;
+}
+.footer-menu ul li:hover {
+  color: $DARKGREY;
+}
+footer {
+  background: $CHERRY05;
+  padding: 5% 5% 1%;
+}
+.footer-logo {
+  text-align: center;
+  margin-bottom: 5%;
+}
+.footer-menu {
+  display: grid;
+  grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+  margin: 5% 0;
+  ul {
+    li {
+      list-style-type: none;
+      cursor: pointer;
+    }
+  }
+}
+.footer-menu-title {
+  text-transform: uppercase;
+  color: $CHERRY;
+  font-weight: bold;
+  min-height: 4em;
+}
+@mixin footer {
+  width: 186px;
+  line-height: 1.5em;
+}
+.footer-menu-1 {
+  @include footer;
+}
+.footer-menu-2 {
+  @include footer;
+}
+.footer-menu-3 {
+  @include footer;
+}
+.footer-menu-4 {
+  @include footer;
+}
+.footer-menu-5 {
+  @include footer;
+}
+.footer-menu-6 {
+  @include footer;
+}
+@mixin footer-bottom {
+  max-width: 659px;
+  align-self: center;
+  text-align: center;
+  margin: 1em 0;
+  font-size: 0.875em;
+}
+.footer-bottom-text {
+  @include footer-bottom;
+}
+.footer-bottom-links {
+  @include footer-bottom;
+  a {
+    text-decoration: none;
+    color: $CHERRY;
+    cursor: pointer;
+    margin: 0 0.5em;
+  }
+}
+.bottom-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media only screen and (min-width: 1441px) {
+  .slider {
+    margin-top: -135px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  @mixin block-img-mobile {
+    height: 232px;
+    width: auto;
+  }
+
+  @mixin block-dir-rev-mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  @mixin block-dir-col-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @mixin block-info-mobile {
+    font-size: 1em;
+    line-height: 1.25em;
+  }
+
+  @mixin block-text-mobile {
+    padding: $padding5-5;
+  }
+
+  @mixin footer-menu-mobile {
+    width: auto;
+    line-height: 2em;
+    margin: 1% 0;
+  }
+
+  @mixin slider-height-mobile {
+    height: 233px;
+  }
+
+  .cards {
+    display: block;
+  }
+  .card-4 {
+    ul {
+      margin-top: 10%;
+    }
+  }
+  .content-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .content-heading {
+    font-size: 32px;
+  }
+  .block-image-1 {
+    @include block-img-mobile;
+  }
+  .block-image-2 {
+    @include block-img-mobile;
+  }
+  .block-image-3 {
+    @include block-img-mobile;
+  }
+  .block-image-4 {
+    @include block-img-mobile;
+  }
+  .block-image-5 {
+    @include block-img-mobile;
+  }
+  .block-image-6 {
+    @include block-img-mobile;
+  }
+  .block {
+    &:nth-child(1) {
+      @include block-dir-rev-mobile;
+    }
+    &:nth-child(3) {
+      @include block-dir-rev-mobile;
+    }
+    &:nth-child(5) {
+      @include block-dir-rev-mobile;
+    }
+    &:nth-child(2) {
+      @include block-dir-col-mobile;
+    }
+    &:nth-child(4) {
+      @include block-dir-col-mobile;
+    }
+    &:nth-child(6) {
+      @include block-dir-col-mobile;
+    }
+  }
+  .block-title-1 {
+    font-size: 1.5em;
+  }
+  .block-title-2 {
+    font-size: 1.5em;
+  }
+  .block-title-3 {
+    font-size: 1.5em;
+  }
+  .block-title-4 {
+    font-size: 1.5em;
+  }
+  .block-title-5 {
+    font-size: 1.5em;
+  }
+  .block-title-6 {
+    font-size: 1.5em;
+  }
+  .block-info-1 {
+    color: $ComeOn;
+    @include block-info-mobile;
+  }
+  .block-info-2 {
+    color: $Restaurangcasino;
+    @include block-info-mobile;
+  }
+  .block-info-3 {
+    color: $Yggdrasil;
+    @include block-info-mobile;
+  }
+  .block-info-4 {
+    color: $Gamelounge;
+    @include block-info-mobile;
+  }
+  .block-info-5 {
+    color: $Charcoal;
+    @include block-info-mobile;
+  }
+  .block-info-6 {
+    color: $CHERRY;
+    @include block-info-mobile;
+  }
+  .block-text-green {
+    background: $ComeOn20;
+    @include block-text-mobile;
+  }
+  .block-text-purple {
+    background: $Restaurangcasino20;
+    @include block-text-mobile;
+  }
+  .block-text-orange {
+    background: $Yggdrasil20;
+    @include block-text-mobile;
+  }
+  .block-text-blue {
+    background: $Gamelounge20;
+    @include block-text-mobile;
+  }
+  .block-text-grey {
+    background: $GREYLIGHT20;
+    @include block-text-mobile;
+  }
+  .block-text-red {
+    background: $CHERRY20;
+    @include block-text-mobile;
+  }
+  .share {
+    height: auto;
+    margin-top: 10%;
+  }
+  .social {
+    display: block;
+    position: unset;
+  }
+  .footer-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-menu-1 {
+    @include footer-menu-mobile;
+  }
+  .footer-menu-2 {
+    @include footer-menu-mobile;
+  }
+  .footer-menu-3 {
+    @include footer-menu-mobile;
+  }
+  .footer-menu-4 {
+    @include footer-menu-mobile;
+  }
+  .footer-menu-5 {
+    @include footer-menu-mobile;
+  }
+  .footer-menu-6 {
+    @include footer-menu-mobile;
+  }
+  .footer-menu-title {
+    min-height: 2em;
+  }
+  .footer-logo {
+    img {
+      height: 31px;
+      width: auto;
+    }
+  }
+  .slider-text {
+    p {
+      font-size: 32px;
+    }
+  }
+  .slider-1 {
+    @include slider-height-mobile;
+  }
+  .slider-2 {
+    @include slider-height-mobile;
+  }
+  .slider-3 {
+    @include slider-height-mobile;
+  }
+  .slider-4 {
+    @include slider-height-mobile;
+  }
+  .slider-5 {
+    @include slider-height-mobile;
+  }
+  .cookie {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    background: $Charcoal80;
+  }
+  .info {
+    margin-bottom: 2%;
+  }
+  .header-desktop {
+    display: none;
+  }
+  .header-mobile {
+    display: flex;
+  }
+  .slider {
+    margin-top: 0;
+  }
+  .mobile-sub-menu {
+    ul {
+      i {
+        width: 1%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1275px) and (min-width: 1024px) {
+  @mixin footer-menu-mobile {
+    width: 140px;
+    line-height: 1.5em;
+  }
+
+  .footer-menu-1 {
+    @include footer-menu-mobile;
+  }
+  .footer-menu-2 {
+    @include footer-menu-mobile;
+  }
+  .footer-menu-3 {
+    @include footer-menu-mobile;
+  }
+  .footer-menu-4 {
+    @include footer-menu-mobile;
+  }
+  .footer-menu-5 {
+    @include footer-menu-mobile;
+  }
+  .footer-menu-6 {
+    @include footer-menu-mobile;
+  }
+  .slider {
+    margin-top: -117px;
+  }
+}
+@media only screen and (min-width: 1023px) {
+  .header-mobile {
+    display: none !important;
+  }
+  .mobile {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 1750px) {
+  .share-text-page {
+    padding-top: 4%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .mobile-width {
+    width: 250% !important;
+  }
+  .mobile-menu {
+    i {
+      width: 39%;
+    }
+  }
+  .mobile-sub-menu {
+    ul {
+      i {
+        width: 2%;
+      }
+    }
+  }
+}
